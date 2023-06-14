@@ -2,3 +2,18 @@
 #section li {
   list-style-type: none;
 }
+
+
+@media (min-width: 1076px) {
+  /* Modificaciones para pantallas más grandes */
+  .custom-container {
+    width: 25%;
+  }
+}
+
+@media (min-width: 759px) and (max-width: 1075px) {
+  /* Modificaciones para pantallas más grandes */
+  .custom-container {
+    width: 40%;
+  }
+}

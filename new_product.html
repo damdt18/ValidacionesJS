@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>New Product</title>
     <style> </style>
@@ -12,26 +13,75 @@
 
 <body>
     <header>
-        <img src="./SRC/the_store_logo.png" alt="Logo  de la empresa The Store">
-        <ul>
-            <li>Products</li>
-            <li>Car</li>
-            <li>Login</li>
-            <li> <a href=new_product.html>New Products</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="./SRC/the_store_logo.png" alt="Logo de la empresa The Store" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new_product.html">New Products</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-<div class="section">
-    <label for="Name">Name:</label>
-    <input type="text" name="Name" placeholder="Product name">
-    <label for="Price">Price:</label>
-    <input type="number" name="Price" placeholder="Price">
-    <label for="Inventory"> Inventary:</label>
-    <input type="Number" name="Inventory" placeholder="">
-    <button>Create Product</button>
+    <div class="container justify-content-center align-items-center mx-auto pt-5 mt-5 custom-container">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title pb-3">Nuevo producto</h3>
+                        <form id="productForm">
 
-</div>
+                            <div class="form-group">
+                                <label for="name">Nombre:</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Ingrese nombre del producto">
+                                <div id="nameError" class="error-message text-danger small"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Precio:</label>
+                                <input type="number" class="form-control" id="price"
+                                    placeholder="Ingrese el precio del producto">
+                                <div id="priceError" class="error-message text-danger small"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inventory">Inventario:</label>
+                                <input type="number" class="form-control" id="inventory"
+                                    placeholder="Ingrese el numero de inventario">
+                                <div id="inventoryError" class="error-message text-danger small"></div>
+                            </div>
+                            <div class="pt-2">
+                                <button type="submit" class="btn btn-primary btn-block"
+                                    onclick="createProduct(event)">Crear
+                                    Producto</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>The Store</title>
     <style> </style>
 </head>
+
 <body>
-<header>
-<img src="./SRC/the_store_logo.png" alt="Logo  de la empresa The Store">
-<ul>
-    <li>Products</li>
-    <li>Car</li>
-    <li>Login</li>
-    <li> <a href=new_product.html>New Products</a></li>
-</ul>
-</header>
-<div id="section">
-<ul>
-    <li>
-        <img src="./SRC/Cable_SATA.webp" alt="Cable Sata a USBV" width="250px">
-        <p><b>Cable SATA a USB 3,0/2,0 de hasta 6 Gbps para disco duro externo HDD SSD de 2,5 pulgadas</b></p>
-        <p> $8.350</p>
-        <button>Add  to Cart</button>
-    </li>
-    <li>
-        <img src="./SRC/Adaptador_LED_Bluetooth.webp" alt="Adatador Bluettoh para coche" width="250px">
-        <p><b>Adaptador LED Bluetooth 5,0, transmisor y receptor de Audio inalámbrico para música de coche</b></p>
-        <p> $30.585</p>
-        <button>Add  to Cart</button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="./SRC/the_store_logo.png" alt="Logo de la empresa The Store" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new_product.html">New Products</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="section" class="container pt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./SRC/Cable_SATA.png" alt="Cable Sata a USBV" class="card-img-top" width="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Cable SATA a USB 3.0/2.0 de hasta 6 Gbps para disco duro externo HDD SSD
+                            de 2,5 pulgadas</h5>
+                        <p class="card-text">$8.350</p>
+                        <button class="btn btn-primary btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./SRC/Adaptador_LED_Bluetooth.png" alt="Adatador Bluettoh para coche" class="card-img-top"
+                        width="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Adaptador LED Bluetooth 5.0, transmisor y receptor de Audio inalámbrico
+                            para música de coche</h5>
+                        <p class="card-text">$30.585</p>
+                        <button class="btn btn-primary btn-block">Add to Cart</button>
+                    </div>
+                </div>
 
-    </li>
-</ul>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./SRC/Constellation-Key-Ring.png" alt="Adatador Bluettoh para coche" class="card-img-top"
+                        width="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Llavero Creativo 12 Constelaciones Piedra del Tiempo Bola de Cristal de
+                            Doble Cara Llavero de Metal</h5>
+                        <p class="card-text">$1.685</p>
+                        <button class="btn btn-primary btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./SRC/Neck-Headrest-Pillow.png" alt="Adatador Bluettoh para coche" class="card-img-top"
+                        width="250px">
+                    <div class="card-body">
+                        <h5 class="card-title">Reposacabezas Almohada Accesorios Soporte Cuello Protector Cuello
+                            Almohada</h5>
+                        <p class="card-text">$24.512</p>
+                        <button class="btn btn-primary btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
